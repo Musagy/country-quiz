@@ -54,7 +54,7 @@ function App() {
               generateQuestion={nextQuestion}
             />
             <img
-              src="/src/assets/image_question.svg"
+              src="./assets/image_question.svg"
               alt="imagen question"
               className="img-question"
             />
@@ -62,7 +62,7 @@ function App() {
         ) : (
           <>
             <img
-              src="/src/assets/image_game-over.svg"
+              src="./assets/image_game-over.svg"
               alt="image game over"
               className="img-game-over"
             />

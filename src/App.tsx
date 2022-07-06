@@ -4,6 +4,8 @@ import Answers from "./components/Answers"
 import { CountryName, QuestionType } from "./types"
 import useFetchAllCountries from "./hooks/useFetchAllCountries"
 import useCreateQuestion from "./hooks/useCreateQuestion"
+import imageGameOver from "./assets/image_game-over.svg"
+import imageQuestion from "./assets/image_question.svg"
 
 function App() {
   const [question, setQuestion] = useState<QuestionType>({
@@ -54,7 +56,7 @@ function App() {
               generateQuestion={nextQuestion}
             />
             <img
-              src="./assets/image_question.svg"
+              src={imageQuestion}
               alt="imagen question"
               className="img-question"
             />
@@ -62,7 +64,7 @@ function App() {
         ) : (
           <>
             <img
-              src="./assets/image_game-over.svg"
+              src={imageGameOver}
               alt="image game over"
               className="img-game-over"
             />
